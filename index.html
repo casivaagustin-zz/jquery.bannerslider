@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='jquery.bannerslider.css' />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.bannerslider.js"></script>
+  </head>
+  <body>
+      <h1>Simple Slider Sample</h1>
+      <p>
+        Just make a Container for Items elements (class=items), and set a custom CSS to make a nice aparience.
+        At the end add the Js code to add the slider.
+      </p>
+      <div id="banner_slider_x" class="banner_container">
+        <div class="item">
+          Uno
+        </div>
+        <div class="item">
+          Dos
+        </div>
+        <div class="item">
+          Tres
+        </div>
+      </div>
+      <div>
+        <span id="left"> < </span>
+        <span id="right"> > </span>
+      </div>
+
+     <div id="banner_slider_y" class="banner_container">
+        <div class="item">
+          Uno
+        </div>
+        <div class="item">
+          Dos
+        </div>
+        <div class="item">
+          Tres
+        </div>
+      </div>
+      <div>
+        <span id="down"> Down </span>
+        <span id="up"> Up </span>
+      </div>
+
+    <script>
+      $(document).ready(function(){
+        $('#banner_slider_x').bannerSlider('#left','#right', 'x');
+        $('#banner_slider_y').bannerSlider('#up','#down', 'y');
+      });
+    </script>
+  </body>
+</html>
