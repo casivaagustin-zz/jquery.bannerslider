@@ -1,9 +1,4 @@
-.banner_container {
-  overflow: hidden;
-  position: relative;
-}
-
-.item {
+.banner_item {
   background-color: #eee;
 }
 

@@ -5,46 +5,48 @@
     <script type="text/javascript" src="jquery.bannerslider.js"></script>
   </head>
   <body>
-      <h1>Simple Slider Sample</h1>
-      <p>
-        Just make a Container for Items elements (class=items), and set a custom CSS to make a nice aparience.
-        At the end add the Js code to add the slider.
-      </p>
-      <div id="banner_slider_x" class="banner_container">
-        <div class="item">
-          Uno
-        </div>
-        <div class="item">
-          Dos
-        </div>
-        <div class="item">
-          Tres
-        </div>
+    <h1>Simple Slider Sample</h1>
+    <p>
+      Just make a Container for Items elements, and set a custom CSS to make a 
+      nice aparience. At the end add the Js code to add the slider.
+      Each child of the container will be an element for the slider.
+    </p>
+    <div id="banner_slider_x">
+      <div>
+        Uno
       </div>
       <div>
-        <span id="left"> < </span>
-        <span id="right"> > </span>
-      </div>
-
-     <div id="banner_slider_y" class="banner_container">
-        <div class="item">
-          Uno
-        </div>
-        <div class="item">
-          Dos
-        </div>
-        <div class="item">
-          Tres
-        </div>
+        Dos
       </div>
       <div>
-        <span id="down"> Down </span>
-        <span id="up"> Up </span>
+        Tres
       </div>
+    </div>
+    <div>
+      <span id="left"> < </span>
+      <span id="right"> > </span>
+    </div>
 
-    <script>
+    <div id="banner_slider_y">
+      <div>
+        Uno
+      </div>
+      <div>
+        Dos
+      </div>
+      <div>
+        Tres
+      </div>
+    </div>
+    <div>
+      <span id="down"> Down </span>
+      <span id="up"> Up </span>
+    </div>
+
+    <script type="text/javascript">
+      /** Two Easy Samples **/
       $(document).ready(function(){
-        $('#banner_slider_x').bannerSlider('#left','#right', 'x');
+        $('#banner_slider_x').bannerSlider('#right','#left', 'x');
         $('#banner_slider_y').bannerSlider('#up','#down', 'y');
       });
     </script>
